@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Blog Website</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Link to the shared CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Add custom CSS for hover effect */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .card {
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include the header -->
+    <!-- Replace the href values with the actual page URLs -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Blog Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobs.html">Jobs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>News Articles
+            <b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+              </svg> </b>           
+        </h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/news/1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">NASA’s New Detectors Could Improve Views of Gamma-Ray Events</h2>
+                        <p class="card-text">Using technology similar to that found in smartphone cameras, NASA scientists are developing upgraded sensors to reveal more details about black hole outbursts and exploding stars — all while being less power-hungry and easier to mass produce than detectors used today.
+                        <br><br>Caputo leads an instrument-development effort called AstroPix at NASA’s Goddard Space Flight Center in Greenbelt, Maryland. The silicon pixel sensors in AstroPix — still in development and testing — are reminiscent of the semiconductor sensors that allow smartphone cameras to be so small.
+
+                    </p>
+                        <a href="https://www.technology.org/2023/06/14/nasa-detectors-new-gamma-ray-views/" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/news/2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">The Ashes: England’s ‘Bazball’ approach gets ultimate test against Australia</h2>
+                        <p class="card-text">The Ashes — the most famous test cricket series of them all — is here once again and the five matches between England and Australia could be among the wildest since the first one was played in 1882.
+
+                            Under captain Ben Stokes and coach Brendon McCullum, whose nickname is “Baz,” England has gone all-out attack and won 12 of its last 17 tests. Always chasing a win — even at the risk of losing — England has not been defeated in a series over the past year. It’s a remarkable turnaround in form for a national team which had won just one of its previous 17 tests before the Stokes-McCullum partnership was formed.
+                            </p>
+                        <a href="https://indianexpress.com/article/sports/cricket/the-ashes-england-australia-preview-8662813/" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more col-md-4 divs for the remaining articles -->
+            <!-- Example for the third article -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/news/3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">AI Draft Rules: EU Lawmakers Agree to Make Changes in Draft Artificial Intelligence Regulations</h2 >
+                        <p class="card-text">EU lawmakers agreed on Wednesday to changes in draft artificial intelligence rules proposed by the European Commission in a bid to set a global standard for a technology used in everything from automated factories to bots such as ChatGPT.
+
+                            The lawmakers will now have to thrash out details with European Union countries before the draft rules become legislation.<br><br>
+                            The biggest issue is expected to be facial recognition and biometric surveillance where some lawmakers want a total ban while EU countries want an exception for national security, defence and military purposes.
+
+                           </p>
+                        <a href="https://www.gadgets360.com/internet/news/ai-eu-regulations-european-commission-artificial-intelligence-draft-bill-4121011" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/news/4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Oppo Reno 10 Series India Launch Tipped for Mid-July, Indian Variants May Have Different Designs</h2>
+                        <p class="card-text">Oppo Reno 10 series comprising the vanilla Oppo Reno 10, Reno 10 Pro, and Reno 10 Pro+ were launched in China in May. Now, the Chinese smartphone brand is reportedly gearing up to release the Reno 10 series in India. The date is yet to be revealed by Oppo, but a new report indicates that Oppo Reno 10 series will go official in the country in mid-July. The Indian variants of the Oppo Reno 10, Reno 10 Pro, and Reno 10 Pro+ may pack different SoCs under the hood. The Oppo Reno 10 Pro+ is said to retain the same design as the China model, while other models could come with different camera designs.
+                            <br><br>The Indian variants of Oppo Reno 10 and Oppo Reno 10 Pro could pack the MediaTek Dimensity 7050 SoC under the hood. The Chinese variant of the vanilla model runs on Snapdragon 778G SoC, whereas the Reno 10 Pro runs on MediaTek Dimensity 8200 SoC. The Chinese variant of Oppo Reno 10 Pro+ is powered by Snapdragon 8+ Gen 1 SoC, and the Indian variant is said to come with the same SoC.
+                        </p>
+                        <a href="https://www.gadgets360.com/mobiles/news/oppo-reno-10-pro-plus-5g-india-launch-mid-july-design-specifications-report-4121019" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/news/5.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Microsoft’s acquisition of Activision on hold in the US</h2>
+                        <p class="card-text">
+                            Please use the sharing tools found via the share button at the top or side of articles. Copying articles to share with others is a breach of FT.com T&Cs and Copyright Policy. Email licensing@ft.com to buy additional rights. Subscribers may share up to 10 or 20 articles per month using the gift article service. More information can be found at https://www.ft.com/tour.
+                            https://www.ft.com/content/9843e75d-0f1d-4db2-be0e-756cec85d503
+                        
+                            A US federal judge has put Microsoft’s $75bn acquisition of Activision Blizzard on hold as the Federal Trade Commission seeks to block the transaction.
+                        
+                        A judge in a US district court in California on Tuesday handed down an order prohibiting the closure of the gaming industry’s biggest deal pending an “evidentiary hearing” set for Thursday and Friday next week.
+                        
+                        The FTC last year had sued to block what would be Microsoft’s biggest deal yet through its own in-house proceedings. But on Monday it filed a complaint asking the federal court to block the transaction until after those proceedings — set to begin in August — determine whether the tie-up violates US antitrust laws.
+                        
+                        The companies have until Friday to submit a brief opposing the FTC’s request.
+                        <br><br>
+                        Microsoft said: “Accelerating the legal process in the US will ultimately bring more choice and competition to the gaming market. A temporary restraining order makes sense until we can receive a decision from the court, which is moving swiftly.”
+                        </p>
+                        <a href="https://timesofindia.indiatimes.com/gadgets-news/microsofts-acquisition-of-activision-on-hold-in-the-us/articleshow/100981699.cms" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/news/6.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Anthony Santander’s ‘superhero’ catch and monster home runs cap off exciting weekend of MLB action</h2>
+                        <p class="card-text">From crazy catches to huge home runs, the stars were on display and showcasing their talents to the delight of the fans.
+
+                            The first highlight-worthy play came on Saturday during the Baltimore Orioles’ games against the Kansas City Royals.
+                            
+                            In the first inning of the two teams’ second game of a three-game series, Maikel García smashed the ball to the right of Oriole Park with two of his teammates already on base.
+                            <br><br>
+                            The ball looked to be just sailing over the head of Baltimore outfielder Anthony Santander and to safety when, out of nowhere, the 28-year-old reached up with his left hand and plucked the ball out of the air full stretch to complete an amazing catch.
+                            
+                            Such was the momentum of his effort, Santander had to brace himself against the wall of the outfield as he came crashing down to earth with the ball in his mitt.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="py-3 bg-dark text-white text-center">
+        &copy; 2023 Blog Website. All rights reserved.
+    </footer>
+    <!-- Include the Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include the shared JS file if needed -->
+    <script src="js/script.js"></script>
+</body>
+</html>

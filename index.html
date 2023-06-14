@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Customize your styles here */
+        body {
+            background-color: #5C6BC0;
+        }
+        
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .nav-link.active {
+            background-color: #f8f9fa;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Blog Website</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html" onclick="activateSection(this)">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html" onclick="activateSection(this)">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jobs.html" onclick="activateSection(this)">Jobs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- News Feed -->
+            <div id="news" class="col-lg-4 mb-4 wow animate__animated animate__fadeInLeft">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"><a  href="news.html" onclick="activateSection(this)">News Feeds</a></h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><h5>NASA’s New Detectors Could Improve Views of Gamma-Ray Events</h5></li><hr>
+                            <li class="list-group-item"><h5>The Ashes: England’s ‘Bazball’ approach gets ultimate test against Australia</h5></li><hr>
+                            <li class="list-group-item"><h5>AI Draft Rules: EU Lawmakers Agree to Make Changes in Draft Artificial Intelligence Regulations</h5></li><hr>
+                            <li class="list-group-item"><h5>Oppo Reno 10 Series India Launch Tipped for Mid-July, Indian Variants May Have Different Designs</h5></li><hr>
+                            <li class="list-group-item"><h5>Microsoft’s acquisition of Activision on hold in the US</h5></li><hr>
+                            <li class="list-group-item"><h5>Anthony Santander’s ‘superhero’ catch and monster home runs cap off exciting weekend of MLB action</h5></li><hr>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Updates on Upcoming Events -->
+            <div id="events" class="col-lg-4 mb-4 wow animate__animated animate__fadeIn">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"><a class="nav-link" href="events.html" onclick="activateSection(this)">Updates on Upcoming Events</a>
+                        </h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><h5>International Conference on Engineering and Advancement in Technology 2023</h5></li><hr>
+                            <li class="list-group-item"><h5>OPEN MIC IN DELHI - Poetry, Storytelling, Singing, Rapping, Standup Comedy </h5></li><hr>
+                            <li class="list-group-item"><h5>World Conference on Applied Science Engineering and Technology (WCASET)</h5></li><hr>
+                            <li class="list-group-item"><h5>Late Night Noida Live Stand-up Comedy</h5></li><hr>
+                            <li class="list-group-item"><h5>India Energy Technology Forum</h5></li><hr>
+                            <li class="list-group-item"><h5>TroyBoi India Tour I Delhi NCR</h5></li><hr>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jobs -->
+            <div id="jobs" class="col-lg-4 mb-4 wow animate__animated animate__fadeInRight">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" ><a class="nav-link" href="jobs.html" onclick="activateSection(this)">Jobs</a></h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><h5>Scientist-D Post in Department of Science and Technology via Deputation</h5></li><hr>
+                            <li class="list-group-item"><h5>GIS Vacancy: PROJECT SCIENTIST, RESEARCH ASSOCIATE, SENIOR RESEARCH FELLOW</h5></li><hr>
+                            <li class="list-group-item"><h5>Indian Institute of Science Education & Research (IISER), Pune Recruitment 2018</h5></li><hr>
+                            <li class="list-group-item"><h5>Executive Assistant to Founder</h5></li><hr>
+                            <li class="list-group-item"><h5>Young Professional – National Career Service (NCS) Project</h5></li><hr>
+                            <li class="list-group-item"><h5>Careers at NASA</h5></li><hr>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white text-center">
+        &copy; 2023 Blog Website. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Animation JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        function activateSection(element) {
+            // Remove 'active' class from all nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach((link) => {
+                link.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked nav link
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>
