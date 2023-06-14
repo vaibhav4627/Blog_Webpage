@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Animation CSS -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- Custom CSS -->
+    
     <style>
-        /* Customize your styles here */
-        body {
+         body {
             background-color: #5C6BC0;
         }
         
@@ -122,14 +120,12 @@
         new WOW().init();
 
         function activateSection(element) {
-            // Remove 'active' class from all nav links
             const navLinks = document.querySelectorAll('.nav-link');
             navLinks.forEach((link) => {
                 link.classList.remove('active');
             });
 
-            // Add 'active' class to the clicked nav link
-            element.classList.add('active');
+           element.classList.add('active');
         }
     </script>
 </body>
